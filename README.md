@@ -1,2 +1,2 @@
 # ethermint-networks
-Files for Ethermint networks deployed on top of Celestia
+Ethermint networks deployed on top of Celestia
