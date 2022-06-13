@@ -1,0 +1,27 @@
+[Core]
+  Protocol = "tcp"
+  RemoteAddr = "localhost:26657"
+  GRPCAddr = "localhost:9090"
+
+[Key]
+  KeyringAccName = ""
+
+[P2P]
+  ListenAddresses = ["/ip4/0.0.0.0/tcp/2121", "/ip6/::/tcp/2121"]
+  AnnounceAddresses = []
+  NoAnnounceAddresses = ["/ip4/0.0.0.0/tcp/2121", "/ip4/127.0.0.1/tcp/2121", "/ip6/::/tcp/2121"]
+  Bootstrapper = false
+  MutualPeers = []
+  PeerExchange = false
+  [P2P.ConnManager]
+    Low = 50
+    High = 100
+    GracePeriod = 60000000000
+
+[RPC]
+  Address = "0.0.0.0"
+  Port = "26658"
+
+[Services]
+  TrustedHash = ""
+  TrustedPeers = []
